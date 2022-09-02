@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body{
+    background-image: url(./img/fondoimagen.jpg)
+    
+}
+.menuflex{
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    background-color: white;
+    max-width: 350px;
+    padding: 10px 0px;
+}
+
+.conteiner{
+    background-color: antiquewhite;
+    text-align: center;
+    margin: 4px;    
+}
+
+
+
+.logo{
+    background-color: brown;
+    color: rgb(255, 255, 255);
+    max-width: 40pxx;
+ }
+
+.grid-galery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    max-width: 1440px;
+}
+.grid-galery img{
+    width: 530px;
+    height: 320px;
+    border: 1px solid black;
+    max-width: 530px;
+    min-width: auto;
+    margin-left: 50px;
+}
+.footer{
+    position: relative;
+    bottom: 0;
+    background-color: azure;
+}
+.terminos{
+    background-color: aliceblue;
+}
+.contacto1{
+    background-color: aliceblue;
+    max-width: 500px;
+}
+.trabajosgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 450px;
+    gap: 20px;
+    padding: 10px;
+}
+.trabajoss{
+    width: 100%;
+    height: 400px;
+}
+.rellenar{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 0;
+    top: 65px;
+}
+.Titulologo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-style: oblique;
+    text-decoration: underline;
+}
+@media (max-width: 1170px) {
+    .grid-galery img{
+        width: 530px;
+        height: 320px;
+        border: 1px solid black;
+        max-width: 530px;
+        min-width: auto;
+        margin-left: 0px;
+    }
+}
+@media (max-width: 750px) {
+    .conteiner{
+        background-color: brown;
+    }
+    .menuflex{
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+        max-width: 140px;
+    }
+    .rellenar{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 65px;
+    }
+    .grid-galery{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        max-width: 900px;
+    }
+} 
